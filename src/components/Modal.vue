@@ -1,10 +1,10 @@
 <template>
   <div class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      {{modal.title}}
+      <span class="close" v-on:click="handleClose">&times;</span>
+      {{title}}
       <p>
-        {{modal.text}}
+        {{text}}
       </p>
     </div>
   </div>
@@ -12,14 +12,18 @@
 
 <script>
 export default {
+  name: 'Modal',
   props: {
-    modal: {
-      title: String,
-      text: String
-    }
+    title: String,
+    text: String
   },
   data () {
     return {
+    }
+  },
+  methods: {
+    handleClose: function (event) {
+      event.target.parentElement.parentElement.style.display = 'none'
     }
   }
 }

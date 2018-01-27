@@ -1,6 +1,8 @@
 <template>
   <div class="card">
-    <modal/>
+    <modal :title.sync="card.title"
+           :text.sync="card.text"
+           />
     <button v-on:click="handleClick">
       <div class="content">
         <h2> {{card.title}} </h2>
@@ -32,8 +34,7 @@ export default {
   },
   methods: {
     handleClick: function (event) {
-      alert('Hi')
-      return 'block'
+      event.target.previousElementSibling.style.display = 'block'
     }
   }
 }

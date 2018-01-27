@@ -21,7 +21,7 @@ export default {
     return {
       Card1: {
         title: 'Amazing Bill',
-        intor: 'Introduction To this bill'
+        intro: 'Introduction To this bill'
       },
       Card2: {
         title: 'Not a cool bill',
