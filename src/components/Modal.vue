@@ -42,14 +42,29 @@ export default {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: back-fadein;
+  animation-duration: .75s;
 }
+
+@keyframes back-fadein{
+  from {background-color: rgba(0,0,0,0.0);}
+  to {background-color: rgba(0,0,0,0.4);}
+}
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 10% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide{
+  from {margin: 0% auto;}
+  to {margin: 10% auto;}
 }
 
 /* The Close Button TODO move this to bill card*/
