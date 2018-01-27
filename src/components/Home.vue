@@ -2,14 +2,33 @@
   <div class="home">
     <h1>Bill Feed</h1>
     See what organizations have to say about on-going bills
-    <div>
+    <div class="card-view">
+      <card :card.sync="Card1"/>
+      <card :card.sync="Card2"/>
     </div>
   </div>
 </template>
 
 <script>
+import Card from '@/components/Card.vue'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Card
+  },
+  data: function () {
+    return {
+      Card1: {
+        title: 'Amazing Bill',
+        intor: 'Introduction To this bill'
+      },
+      Card2: {
+        title: 'Not a cool bill',
+        intro: 'text here lol'
+      }
+    }
+  }
 }
 </script>
 

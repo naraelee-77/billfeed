@@ -1,15 +1,14 @@
 <template>
   <div class="test">
-    {{text}}
-    <br>
-    {{moretext}}
+    {{title}}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Test',
-  props: ['text', 'moretext'],
+  props: {
+    title: String
+  },
   data () {
     return {
     }

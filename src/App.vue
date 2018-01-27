@@ -1,24 +1,12 @@
 <template>
   <div id="app">
-    <test :text.sync="text" :moretext.sync="moretext"></test>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Test from '@/components/Test.vue'
-
 export default {
-  name: 'App',
-  components: {
-    Test
-  },
-  data: function () {
-    return {
-      text: 'Data being passed from App to a prop of test',
-      moretext: 'woah'
-    }
-  }
+  name: 'App'
 }
 </script>
 
