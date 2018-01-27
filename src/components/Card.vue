@@ -6,6 +6,7 @@
     <button v-on:click="handleClick">
       <div class="content">
         <h2> {{card.title}} </h2>
+        <hr>
         <p> {{card.intro}} </p>
       </div>
     </button>

@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <topbar/>
     <h1>Bill Feed</h1>
     See what organizations have to say about on-going bills
     <div class="card-view">
@@ -11,11 +12,11 @@
 
 <script>
 import Card from '@/components/Card.vue'
-
+import Topbar from '@/components/Topbar.vue'
 export default {
   name: 'Home',
   components: {
-    Card
+    Card, Topbar
   },
   data: function () {
     return {
