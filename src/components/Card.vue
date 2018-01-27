@@ -10,7 +10,6 @@
         <p> {{card.intro}} </p>
       </div>
     </button>
-
   </div>
 </template>
 

@@ -17,17 +17,19 @@
         <card :card.sync="Card1"/>
         <card :card.sync="Card2"/>
       </div>
-   </div>
+    </div>
+    <bottombar/>
   </div>
 </template>
 
 <script>
 import Card from '@/components/Card.vue'
 import Topbar from '@/components/Topbar.vue'
+import Bottombar from '@/components/Bottombar.vue'
 export default {
   name: 'Home',
   components: {
-    Card, Topbar
+    Card, Topbar, Bottombar
   },
   data: function () {
     return {
