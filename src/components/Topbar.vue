@@ -17,6 +17,7 @@ export default {
 .topbar{
     text-align: left;
     background-color: #bbbbbb;
+    height: 2em;
 }
 
 i {

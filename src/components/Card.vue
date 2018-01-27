@@ -43,4 +43,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.card {
+  margin: 1em;
+}
+button{
+  text-align: left;
+  width: 50em;
+  border-left: 6px solid blue;
+  border-bottom:none;
+  border-right:none;
+  background-color:white;
+}
 </style>

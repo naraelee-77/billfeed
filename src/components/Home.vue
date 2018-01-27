@@ -1,12 +1,23 @@
 <template>
   <div class="home">
     <topbar/>
-    <h1>Bill Feed</h1>
+    <!--h1>Bill Feed</h1>
     See what organizations have to say about on-going bills
-    <div class="card-view">
-      <card :card.sync="Card1"/>
-      <card :card.sync="Card2"/>
-    </div>
+    <hr-->
+    <div class="content">
+      <div class="topsection">
+        <img src="../assets/AI.jpg"/>
+        <div class="title">
+          <h1>Amnesty Interational</h1>
+          <p><em>Campaign for a world where human rights are enjoyed by all</em></p>
+        </div>
+      </div>
+
+      <div class="card-view">
+        <card :card.sync="Card1"/>
+        <card :card.sync="Card2"/>
+      </div>
+   </div>
   </div>
 </template>
 
@@ -35,18 +46,25 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+.topsection{
+  overflow:hidden;
+  padding-left:20em;
+  padding-right:20em;
+  padding-top:3em;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.title{
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+img{
+  float:left;
+  width: 150px;
+  height: 150px;
+  overflow:hidden;
+  border-radius: 50%;
 }
-a {
-  color: #42b983;
+
+h1{
+  font-size:2.5em;
 }
 </style>
