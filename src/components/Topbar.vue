@@ -1,7 +1,7 @@
 <template>
   <div class="topbar">
     <i class="fa fa-file-text"/>
-    <h3>Bill Feed</h3>
+    <h3><a href="/">Bill Feed</a></h3>
   </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
     text-align: left;
     background-color: #bbbbbb;
     height: 2em;
+    padding-top:.5em;
 }
 
 i {
@@ -27,5 +28,9 @@ i {
 }
 h3 {
    display: inline
+}
+a{
+    text-decoration: none;
+    color:inherit;
 }
 </style>

@@ -52,5 +52,13 @@ button{
   border-bottom:none;
   border-right:none;
   background-color:white;
+  transition: .15s;
+  border-radius: 5px;
 }
+
+button:hover{
+  background-color: #f0f0f0;
+  border-left: 9px solid red;
+}
+
 </style>

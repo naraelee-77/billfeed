@@ -48,14 +48,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .topsection{
   overflow:hidden;
   padding-left:20em;
   padding-right:20em;
   padding-top:3em;
-}
-
-.title{
 }
 
 img{
