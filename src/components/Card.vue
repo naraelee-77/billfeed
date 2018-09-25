@@ -38,8 +38,8 @@ export default {
     }
   },
 
-  created: function () {
-    this.getBillInfo()
+  created: function (id) {
+    this.getBillInfo(id)
   },
 
   methods: {
@@ -49,8 +49,8 @@ export default {
       
     },
 
-    getBillInfo: function () {
-      var propub = 'https://api.propublica.org/congress/v1/115/bills/hr4881'
+    getBillInfo: function (id) {
+      var propub = 'https://api.propublica.org/congress/v1/115/bills/' + id
       fetch(propub, { headers: {
         'X-API-Key': 'kTURrPH8Awsjo6H8zd7JSEqfyFrxvPO0ubGmbHl6'
       }})
